@@ -4,9 +4,10 @@
 //        2) Найти минимальное значение
 //        3) Найти максимальное значение
 //        4) Найти среднее значение
-import javax.swing.plaf.synth.SynthOptionPaneUI;
+
 import java.util.ArrayList;
 import java.util.Random;
+
 public class HomeWork3 {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
