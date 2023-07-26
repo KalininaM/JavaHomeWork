@@ -12,10 +12,10 @@ public class HomeWork5_1 {
         addNumber("Ivan", 423);
         addNumber("Ivan", 024);
         addNumber("Ivan", 642);
+        addNumber("Olga", 246);
         addNumber("Petr", 594);
         addNumber("Petr", 742);
         addNumber("Petr", 139);
-        addNumber("Olga", 246);
 
         System.out.println("Справочник:");
         System.out.println(phoneMap);
