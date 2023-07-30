@@ -8,14 +8,17 @@ public class HomeWork5_1 {
     static HashMap<String, ArrayList<Integer>> phoneMap;
     public static void main(String[] args) {
         phoneMap = new HashMap<>();
-        addNumber("Ivan", 123);
-        addNumber("Ivan", 423);
-        addNumber("Ivan", 024);
-        addNumber("Ivan", 642);
-        addNumber("Petr", 594);
-        addNumber("Petr", 742);
-        addNumber("Petr", 139);
-        addNumber("Olga", 246);
+
+        Scanner scanner = new Scanner(System.in);
+        while (true){
+            System.out.println("Создать контакт (введите имя и его номер или введите Quit для выхода)?");
+            String nameOfContact = scanner.nextLine();
+            if(nameOfContact.equals("Quit")){
+                break;
+            }
+            String numberOfContact = scanner.nextLine();
+            addNumber(nameOfContact, Integer.parseInt(numberOfContact));
+        }
 
         System.out.println("Справочник:");
         System.out.println(phoneMap);
